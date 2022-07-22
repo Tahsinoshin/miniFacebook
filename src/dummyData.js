@@ -1,52 +1,52 @@
 export const Users=[
     {
         id:1,
-        profilePicture:"assets/images.png",
+        profilePicture:"assets/images.jpeg",
         username: "USERRRR",
     },
     {
         id:2,
-        profilePicture:"assets/images.jpeg",
+        profilePicture:"assets/friend1.png",
         username:"nosh",
     },
     {
         id:3,
-        profilePicture:"assets/images.jpeg",
+        profilePicture:"assets/friend2.png",
         username:"mosh",
     },
     {
         id:4,
-        profilePicture:"assets/images.jpeg",
+        profilePicture:"assets/friend3.jpeg",
         username:"ghosh",
     },
     {
         id:5,
-        profilePicture:"assets/images.jpeg",
+        profilePicture:"assets/friend4.jpeg",
         username:"posh",
     },
     {
         id:6,
-        profilePicture:"assets/images.jpeg",
+        profilePicture:"assets/friend5.jpeg",
         username:"tahsin",
     },
     {
         id:7,
-        profilePicture:"assets/images.jpeg",
+        profilePicture:"assets/friend6.jpeg",
         username:"samiha",
     },
     {
         id:8,
-        profilePicture:"assets/images.jpeg",
+        profilePicture:"assets/friend7.jpeg",
         username:"samia",
     },
     {
         id:9,
-        profilePicture:"assets/images.jpeg",
+        profilePicture:"assets/friend8.jpeg",
         username:"tahsinoshin",
     },
     {
         id:10,
-        profilePicture:"assets/images.jpeg",
+        profilePicture:"assets/friend9.jpeg",
         username:"undone",
     },
     
@@ -64,32 +64,32 @@ export const Posts=[
 
 
     {
-        id:1,
+        id:2,
         desc:"love for all, hatred for none",
         photo:"assets/index.png",
         date: "5 mins ago",
-        userId:1,
+        userId:2,
     },
 
     {
-        id:1,
+        id:3,
         desc:"love for all, hatred for none",
         photo:"assets/index.png",
         date: "5 mins ago",
-        userId:1,
+        userId:3,
     },
     {
-        id:1,
+        id:4,
         desc:"love for all, hatred for none",
         photo:"assets/index.png",
         date: "5 mins ago",
-        userId:1,
+        userId:4,
     },
     {
-        id:1,
+        id:5,
         desc:"love for all, hatred for none",
         photo:"assets/index.png",
         date: "5 mins ago",
-        userId:1,
+        userId:5,
     },
 ]
