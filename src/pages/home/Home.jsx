@@ -6,13 +6,13 @@ import Rightbar from "../../components/rightbar/Rightbar";
 import "./home.css";
 
 
-export default function Home(){
+export default function Home({ fullName }){
     return(
         <>
     <Topbar/>
     <div className="homeContainer">
     <Sidebar/>
-    <Feed/>
+    <Feed fullName = { fullName }/>
     <Rightbar/>
 
     </div>

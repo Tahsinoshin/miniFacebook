@@ -1,5 +1,6 @@
 import "./sidebar.css";
 import { Bookmark, HelpOutline, PlayCircleFilledOutlined, RssFeed,School,Group,Event,WorkOutlined, Chat } from "@mui/icons-material";
+import {Users} from "../../dummyData";
 
 export default function Sidebar(){
     return(
@@ -48,26 +49,14 @@ export default function Sidebar(){
                 <button className="sidebarButton">Show More</button>
                 <hr className="sidebarHr" />
                 <ul className="sidebarFriendList">
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/images.png" alt="" />
-                        <span className="sidebarFriendName">Nosh</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/images.png" alt="" />
-                        <span className="sidebarFriendName">Nosh</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/images.png" alt="" />
-                        <span className="sidebarFriendName">Nosh</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/images.png" alt="" />
-                        <span className="sidebarFriendName">Nosh</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/images.png" alt="" />
-                        <span className="sidebarFriendName">Nosh</span>
-                    </li>
+                    {Users.map((u)=>{
+                        return(
+                            <li className="sidebarListItem">
+                                 <img className="sidebarFriendImg" src={u.profilePicture} />
+                                <span className="sidebarFriendName">{u.username}</span>
+                            </li>
+                        )
+                    })}
                 </ul>
             </div>
         </div>

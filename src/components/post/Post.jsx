@@ -5,16 +5,24 @@ import { Users } from "../../dummyData";
 
 export default function Post({post}) {
 
-    const user= Users.filter(u=>u.id===1)
+    const postProfileName = post.fullName;
+    var postMessage = post?.message;
+    var postProfileImg = "";
+    const postDate = post.date;
+
+    const checkProfileImg = () => {
+        if (postProfileImg === "" )
+            return "./assets/index.png";
+    }
 
   return (
     <div className="post">
         <div className="postWrapper">
             <div className="postTop">
                 <div className="postTopLeft">
-                    <img className="postProfileImg" src={Users.filter(u=>u.id===post.userId)[0].profilePicture} alt="" />
-                    <span className="postUsername">{Users.filter(u=>u.id===post.userId)[0].username}</span>
-                    <span className="postDate">{post.date}</span>
+                <img src={ checkProfileImg() } alt="image" className="postProfileImg" />
+                    <span className="postProfileName">{ postProfileName }</span>
+                    <span className="postDate">{ postDate }</span>
 
 
                 </div>
@@ -24,8 +32,10 @@ export default function Post({post}) {
 
             </div>
             <div className="postCenter">
-                <span className="postText">{post.desc}</span>
-                <img className="postImg" src="assets/images.png"  alt=""/>
+                <span className="postText">
+                    { postMessage }
+                </span>
+                
             </div>
             <div className="postBottom">
                 <div className="postBottomLeft"></div>

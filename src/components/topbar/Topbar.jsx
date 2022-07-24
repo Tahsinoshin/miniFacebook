@@ -2,6 +2,13 @@ import "./topbar.css";
 import {Search , Person, Chat, Notifications} from "@mui/icons-material"
 
 export default function Topbar(){
+
+    const userImg = "";
+
+  const checkUserImg = () => {
+    if (userImg === "")
+      return "./assets/index.png";
+  }
     return(
         <div className="topbarContainer">
             <div className="topbarLeft">
@@ -32,7 +39,7 @@ export default function Topbar(){
                 </div>
             </div>
 
-            <img src="./assets/images.jpeg"  alt="" className="topbarImg"/>
+            <img src={ checkUserImg() }  alt="" className="topbarImg"/>
             
             </div>
 
